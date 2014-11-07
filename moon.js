@@ -1,5 +1,5 @@
-var bg,img,img2;
-
+var img;
+var img2;
 
 function setup() 
 {
@@ -20,10 +20,10 @@ function draw()
    var timing = (new Date()%duration)/duration;
 
    fill(27,105,109);
-   image(img, 400-img.width/2 + Math.cos(timing*2*PI)*400,           // x좌표
-        400-img.height/2 + Math.sin(timing*2*PI)*400, // y좌표
-        200,                                  // width
-        200);            
+   image(img, 400-img.width/2 + Math.cos(timing*2*PI)*200,           // x좌표
+        400-img.height/2 + Math.sin(timing*2*PI)*200, // y좌표
+        100,                                  // width
+        100);            
 
 //moon
    var duration = 1000;
@@ -32,8 +32,8 @@ function draw()
    fill(255,206,0);
    image(img2, 400-img2.width/2 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*100,           // x좌표
         400-img2.height/2 + Math.sin(timing*2*PI)*200+ Math.sin(timing2*2*PI)*100, // y좌표
-        80,                                  // width
-        80);   
+        30,                                  // width
+        30);   
                                       // height
 
     var duration = 3000;
@@ -42,6 +42,6 @@ function draw()
    fill(190,240,8);
    ellipse(400 + Math.cos(timing*2*PI)*300+ Math.cos(timing*2*PI)*70,           // x좌표
         400 + Math.sin(timing*2*PI)*300+ Math.cos(timing*2*PI)*70, // y좌표
-        100,                                  // width
-        100);                                  
+        60,                                  // width
+        60);                                  
 }
