@@ -1,3 +1,4 @@
+var bg;
 var img;
 var img2;
 
